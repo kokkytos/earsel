@@ -316,9 +316,9 @@ finalfunction<-function(x){
   
   datadf<-rbind(datadf, pop)
   datadf<-rbind(datadf, gdp)
-  datadf<-rbind(datadf, round(isol,2))
-  datadf<-rbind(datadf, round(vanui,2))
-  datadf<-rbind(datadf, round(sanui,2))
+  datadf<-rbind(datadf, isol)
+  datadf<-rbind(datadf, vanui)
+  datadf<-rbind(datadf, sanui)
   
   names(datadf)<-years
   row.names(datadf) <-c("Popupation", "GDP", "iSol", "SumVanui", "SumSanui")
